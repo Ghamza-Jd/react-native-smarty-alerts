@@ -15,7 +15,7 @@ import SmartyAlerts from "react-native-smarty-alerts";
 
 // ...
 
-const result = await SmartyAlerts.alert('title', 'message', 'ok', 'cancel', okHandler, cancelHandler);
+SmartyAlerts.alert('title', 'message', 'ok', 'cancel', okHandler, cancelHandler);
 ```
 
 ## Contributing
