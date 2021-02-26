@@ -8,7 +8,9 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    SmartyAlerts.multiply(3, 7).then(setResult);
+    let f = () => { console.log('pressed') };
+    let f2 = () => { console.log('not pressed') };
+    SmartyAlerts.alert("Title", "Message", "Hamza", "jadid", f, f2);
   }, []);
 
   return (

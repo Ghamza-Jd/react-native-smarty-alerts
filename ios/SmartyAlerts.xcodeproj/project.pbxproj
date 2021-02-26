@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* SmartyAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* SmartyAlerts.m */; };
-		F4FF95D7245B92E800C19C63 /*  SmartyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  SmartyAlerts.swift */; };
-
+		41FC93C31C3E0CDE1D5CA29A /* Pods_SmartyAlerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEA3FA02A061BEF490306EF /* Pods_SmartyAlerts.framework */; };
+		F4FF95D7245B92E800C19C63 /* SmartyAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* SmartyAlerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +25,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libSmartyAlerts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSmartyAlerts.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
+		1BEA3FA02A061BEF490306EF /* Pods_SmartyAlerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyAlerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A979D271BFE364993DFC1BE2 /* Pods-SmartyAlerts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyAlerts.release.xcconfig"; path = "Target Support Files/Pods-SmartyAlerts/Pods-SmartyAlerts.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* SmartyAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartyAlerts.m; sourceTree = "<group>"; };
+		BB9CE9DE25E8463500C1481A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1ADAEF79D4B10D91C62B93C /* Pods-SmartyAlerts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyAlerts.debug.xcconfig"; path = "Target Support Files/Pods-SmartyAlerts/Pods-SmartyAlerts.debug.xcconfig"; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* SmartyAlerts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartyAlerts-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* SmartyAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyAlerts.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FC93C31C3E0CDE1D5CA29A /* Pods_SmartyAlerts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AAFF1D818B3C2C8B315CEF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA3FA02A061BEF490306EF /* Pods_SmartyAlerts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +65,23 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
+				BB9CE9DE25E8463500C1481A /* Assets.xcassets */,
 				F4FF95D6245B92E800C19C63 /* SmartyAlerts.swift */,
 				B3E7B5891CC2AC0600A0062D /* SmartyAlerts.m */,
 				F4FF95D5245B92E700C19C63 /* SmartyAlerts-Bridging-Header.h */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
+				69A739A83379B992CBE507A4 /* Pods */,
+				0AAFF1D818B3C2C8B315CEF9 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		69A739A83379B992CBE507A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1ADAEF79D4B10D91C62B93C /* Pods-SmartyAlerts.debug.xcconfig */,
+				A979D271BFE364993DFC1BE2 /* Pods-SmartyAlerts.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +91,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "SmartyAlerts" */;
 			buildPhases = (
+				7CFD75BEBE8AD0634308AA0D /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -117,15 +137,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CFD75BEBE8AD0634308AA0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyAlerts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				F4FF95D7245B92E800C19C63 /* SmartyAlerts.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* SmartyAlerts.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +219,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -220,6 +262,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -227,6 +270,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1ADAEF79D4B10D91C62B93C /* Pods-SmartyAlerts.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -238,16 +282,15 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SmartyAlerts;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartyAlerts-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A979D271BFE364993DFC1BE2 /* Pods-SmartyAlerts.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -259,10 +302,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SmartyAlerts;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartyAlerts-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};

@@ -1,7 +1,12 @@
 import { NativeModules } from 'react-native';
 
 type SmartyAlertsType = {
-  multiply(a: number, b: number): Promise<number>;
+  alert(title: string,
+    message: string,
+    btnOneLabel: string,
+    btnTwoLabel: string,
+    btnOneAction: Function,
+    btnTwoAction: Function): Promise<void>;
 };
 
 const { SmartyAlerts } = NativeModules;
